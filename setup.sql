@@ -1,0 +1,9 @@
+CREATE DATABASE YogiBearGame;
+USE YogiBearGame;
+
+CREATE TABLE HighScores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_name VARCHAR(255) NOT NULL,
+    score INT NOT NULL,
+    date_played TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
